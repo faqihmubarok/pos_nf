@@ -15,10 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', function() {
- 	echo '<h1> HELLO LARAVEL </h1>';
+Route::get('hello', function () {
+   echo '<h1>Hello Laravel</h1>'; 
 });
 
-Route::resource('category','CategoryController');
-
-Route::resource('product','ProductController');
+// Route::get('category','CategoryController@index');
+Route::resource('category', 'CategoryController');
+//arahkan ke product
+Route::resource('product', 'ProductController');

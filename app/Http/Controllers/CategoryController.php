@@ -15,8 +15,8 @@ class CategoryController extends Controller
     public function index()
     {
         //contoh awal 
-        //$category = ['Mobil','Motor','Elektronik','Rumah Tangga'];
-        // return view ('category.index');
+        //$category = ['Mobil','Motor','Elektronik','Rumah tangga'];
+        //select * from categories
         $category = Category::all();
         return view('category.index', compact('category'));
     }
@@ -28,8 +28,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
-        return view ('category.create');
+        return view('category.create');
     }
 
     /**
@@ -40,12 +39,12 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $c = NEW Category;
+        //untuk menyimpan data ke database
+        $c = New Category;
         $c->name = $request->name;
         $c->description = $request->description;
         $c->save();
-
+        //redirect to index.blade
         return redirect()->route('category.index');
     }
 
@@ -68,7 +67,7 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $c = Category::findOrfail($id);
+        $c = Category::find($id);
         return view('category.edit', compact('c'));
     }
 
@@ -81,8 +80,8 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //untuk merubah data ke database
-        $c = Category::findOrfail($id);
+        //untuk ubah data ke database
+        $c = Category::find($id);
         $c->name = $request->name;
         $c->description = $request->description;
         $c->save();

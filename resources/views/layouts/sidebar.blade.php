@@ -21,43 +21,39 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
           <li class="nav-item ">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                
               </p>
             </a>
-
           </li>
-        
+         
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-            Master Data
+                Master Data
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route ('category.index')}}" class="nav-link">
+                <a href="{{ route('category.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Master Data Category</p>
+                  <p>Data Category</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route ('product.index')}}" class="nav-link">
+                <a href="{{ route('product.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data product</p>
+                  <p>Data Product</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Customer</p>
                 </a>
@@ -65,18 +61,20 @@
               <li class="nav-item">
                 <a href="pages/layout/fixed-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data User</p>
+                  <p>Data Users</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-header">TRANSAKSION</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Report</p>
-            </a>
-          </li>
+          
+          
+      
+          <li class="nav-header">Transaction</li>
+          
+          
+         
+          <li class="nav-header">Report</li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

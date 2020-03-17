@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\product;
+use App\Product;
 use App\Category;
 use Illuminate\Http\Request;
 
@@ -16,7 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         $product = Product::all();
-        return view('product.index', \compact('product'));
+        return view('product.index',compact('product'));
     }
 
     /**
@@ -26,7 +26,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $category = Category::orderby('name','desc')->get();
+        //alihkan ke halaman create product
+        $category = Category::orderBy('name','DESC')->get();
         return view('product.create', \compact('category'));
     }
 
@@ -38,16 +39,16 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\product  $product
+     * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(product $product)
+    public function show(Product $product)
     {
         //
     }
@@ -55,10 +56,10 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\product  $product
+     * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(product $product)
+    public function edit(Product $product)
     {
         //
     }
@@ -67,10 +68,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\product  $product
+     * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, product $product)
+    public function update(Request $request, Product $product)
     {
         //
     }
@@ -78,10 +79,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\product  $product
+     * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(product $product)
+    public function destroy(Product $product)
     {
         //
     }

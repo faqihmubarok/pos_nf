@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Ctegory Passing</title>
+    <title>CategoryPassing</title>
 </head>
 <body>
-	<h1>Passing Data Dari Controler</h1>
-	@foreach ($category as $i)
-	<ul>
-		<li>{{$i}}</li>
-	</ul>
-	@endforeach
+    <h1>Passing Data Dari Controller</h1>
+    @foreach ($category as $i)
+        <ul>
+            <li>{{ $i }}</li>
+        </ul>
+    @endforeach
 </body>
 </html>

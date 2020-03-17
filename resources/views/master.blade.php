@@ -29,27 +29,27 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
- 
+
   <!-- Navbar -->
   @include('layouts.header')
   <!-- /.navbar -->
- 
+
   <!-- Main Sidebar Container -->
   @include('layouts.sidebar')
- 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     @yield('content-header')
     <!-- /.content-header -->
- 
+
     <!-- Main content -->
     @yield('content')
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   @include('layouts.footer')
- 
+
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -57,7 +57,7 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
- 
+
 <!-- jQuery -->
 <script src="{{URL::asset('plugins/jquery/jquery.min.js')}}"></script>
 <!-- jQuery UI 1.11.4 -->
