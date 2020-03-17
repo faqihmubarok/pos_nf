@@ -63,7 +63,12 @@
                           <option value="{{ $c->id }}">{{ $c->name }}</option>
                           @endforeach
                           </select>
-                  </div>
+                          <div class="form-group">
+                            <label for=""> Photo </label>
+                            <input type="file" name="photo" required placeholder="photo">
+
+                          </div>
+                                            </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
